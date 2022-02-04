@@ -1,4 +1,4 @@
-var enterBtn = documment.getElementByClassName("enterButton");
+var enterBtn = document.getElementByClassName("enterButton");
 
 enterBtn.addEventListener('click', function () {
     enterBtn.setAttribute('class', 'hidden')
