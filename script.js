@@ -1,4 +1,8 @@
-startBtn.addEventListner('click')
+var enterBtn = documment.getElementByClassName("enterButton");
+
+enterBtn.addEventListener('click', function () {
+    enterBtn.setAttribute('class', 'hidden')
+});
 
 console.log("Connected");
 
