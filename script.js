@@ -15,7 +15,7 @@ var two = document.querySelector("#two");
 var three = document.querySelector("#three");
 var four = document.querySelector("#four");
 var five = document.querySelector("#five ");
-var fasFaLock = document.querySelector(".fa-lock")
+var fasFaLock = document.querySelector(".fas")
 console.log("button clicked")
 
 // Create a function that fires on click of the button fas fa lock
