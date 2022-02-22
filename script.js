@@ -56,8 +56,49 @@ fasFaLock.forEach(function (fasFaLock) {
 var nineAMData = localStorage.getItem("9AM");
 console.log(nineAMData);
 
+var tenAMData = localStorage.getItem("10AM");
+console.log(tenAMData);
+
+var elevenAMData = localStorage.getItem("11AM");
+console.log(elevenAMData);
+
+var twelvePMData = localStorage.getItem("12PM");
+console.log(twelvePMData);
+
+var onePMData = localStorage.getItem("1PM");
+console.log(onePMData);
+
+var twoPMData = localStorage.getItem("2PM");
+console.log(twoPMData);
+
+var threePMData = localStorage.getItem("3PM");
+console.log(threePMData);
+
+var fourPMData = localStorage.getItem("4PM");
+console.log(fourPMData);
+
+var fivePMData = localStorage.getItem("5PM");
+console.log(fivePMData);
 // IF we have DATA - update the DOM
 nine.value = nineAMData;
+
+ten.value = tenAMData;
+
+eleven.value = elevenAMData;
+
+twelve.value = twelvePMData;
+
+one.value = onePMData;
+
+two.value = twoPMData;
+
+three.value = threePMData;
+
+four.value = fourPMData;
+
+five.value = fivePMData;
+
+
 
 //var storage = JSON.parse(localStorage.getItem('highscore'))
 //if (storage === null) {
