@@ -2,6 +2,9 @@ var dt = new Date();
 //var localDate = dt.toLocalDateString();
 document.getElementById('date-time').innerHTML = dt;
 
+var DateTime = luxon.DateTime;
+console.log(DateTime);
+
 console.log("Connected");
 
 console.log(moment().format("MMM Do YY"));
@@ -16,23 +19,23 @@ var two = document.querySelector("#two");
 var three = document.querySelector("#three");
 var four = document.querySelector("#four");
 var five = document.querySelector("#five");
-var fasFaLock = document.querySelectorAll(".fa-lock")
-
+// var fasFaLock = document.querySelectorAll(".fa-lock")
+var buttons = document.querySelectorAll(".btn");
 // Create a function that fires on click of the button fas fa lock
 
 //create a forEach to loop through each element in the array and attach an event listener to that element
 
-fasFaLock.forEach(function (fasFaLock) {
-    fasFaLock.addEventListener('click', function (event) {
+buttons.forEach(function (button) {
+    button.addEventListener('click', function (event) {
         console.log(event.target);
-        console.log(event.target.parentNode);
-        var button = event.target.parentNode;
+        console.log(event.target);
+        var button = event.target;
         console.log(event.target.parentNode.parentNode);
-        let formTableData = event.target.parentNode.parentNode.previousElementSibling;
-        console.log(formTableData.firstElementChild);
-        var tempVal = event.target.parentNode.parentNode.previousElementSibling.firstElementChild.firstElementChild.value;
+        //var formTableData = event.target.parentNode.parentNode.previousElementSibling;
+        //   console.log(formTableData.firstElementChild);
+        var tempVal = event.target.parentNode.previousElementSibling.firstElementChild.firstElementChild.value;
         console.log(tempVal);
-        var tempKey = event.target.parentNode.parentNode.parentNode.firstElementChild.textContent;
+        var tempKey = event.target.parentNode.parentNode.firstElementChild.textContent;
         console.log(tempKey)// event listener code in here)
 
         // - To retreive saved data
@@ -100,17 +103,3 @@ five.value = fivePMData;
 
 
 
-//var storage = JSON.parse(localStorage.getItem('highscore'))
-//if (storage === null) {
-//    storage = []
-//}
-//var user = {
-//   name: input.value,
-//    currentScore: score
-//}
-//console.log(user)
-//storage.push(user)
-//localStorage.setItem('highscore', JSON.stringify(storage));
-// call for highscores
-//displayHighScore();
-//});
